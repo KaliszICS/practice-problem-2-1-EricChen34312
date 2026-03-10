@@ -283,7 +283,7 @@ public class PracticeProblemTest {
          Class[] cArg = { double[].class, double.class };
          Method method = testClass.getDeclaredMethod("findAll", cArg);
          // Enter code here
-         assertArrayEquals(new double[]{0, 2}, (double[]) method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.3), 0.001);
+         assertArrayEquals(new int[]{0, 2}, (int[])method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.3));
       }
 
       catch (NoSuchMethodException e) {
@@ -301,7 +301,7 @@ public class PracticeProblemTest {
          Class[] cArg = { double[].class, double.class };
          Method method = testClass.getDeclaredMethod("findAll", cArg);
          // Enter code here
-         assertArrayEquals(new double[]{}, (double[]) method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.4), 0.001);
+         assertArrayEquals(new int[]{}, (int[]) method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.4));
       }
 
       catch (NoSuchMethodException e) {
@@ -319,7 +319,7 @@ public class PracticeProblemTest {
          Class[] cArg = { double[].class, double.class };
          Method method = testClass.getDeclaredMethod("findAll", cArg);
          // Enter code here
-         assertArrayEquals(new double[]{3}, (double[]) method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.2), 0.001);
+         assertArrayEquals(new int[]{3}, (int[]) method.invoke(null, new double[] { 3.3, 3.5, 3.3, 3.2 }, 3.2));
       }
 
       catch (NoSuchMethodException e) {
@@ -337,7 +337,7 @@ public class PracticeProblemTest {
          Class[] cArg = { double[].class, double.class };
          Method method = testClass.getDeclaredMethod("findAll", cArg);
          // Enter code here
-         assertArrayEquals(new double[]{}, (double[]) method.invoke(null, new double[] {}, 3.3), 0.001);
+         assertArrayEquals(new int[]{}, (int[]) method.invoke(null, new double[] {}, 3.3));
       }
 
       catch (NoSuchMethodException e) {
@@ -355,7 +355,7 @@ public class PracticeProblemTest {
          Class[] cArg = { double[].class, double.class };
          Method method = testClass.getDeclaredMethod("findAll", cArg);
          // Enter code here
-         assertArrayEquals(new double[]{1, 4, 9}, (double[]) method.invoke(null, new double[] { 3.3, 0.0, 3.5, 3.3, 0.0, 3.2, 5.5, 3.2, 4.2, 0.0 }, 0.0), 0.001);
+         assertArrayEquals(new int[]{1, 4, 9}, (int[]) method.invoke(null, new double[] { 3.3, 0.0, 3.5, 3.3, 0.0, 3.2, 5.5, 3.2, 4.2, 0.0 }, 0.0));
       }
 
       catch (NoSuchMethodException e) {
