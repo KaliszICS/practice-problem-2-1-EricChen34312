@@ -50,7 +50,7 @@ public class PracticeProblem {
 		return index;
 	}
 
-	public static double[] findAll(double[] array, double number){
+	public static int[] findAll(double[] array, double number){
 		//make arraylist because i need dynamic
 		ArrayList<Integer> out = new ArrayList<>();
 		
@@ -62,7 +62,7 @@ public class PracticeProblem {
 		}
 
 		//add the output array (as a double[] for some reason)
-		double[] outArr = new double[out.size()];
+		int[] outArr = new int[out.size()];
 
 		//convert
 		for(int i = 0; i < out.size(); i++){
